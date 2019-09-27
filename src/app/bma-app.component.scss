@@ -1,0 +1,23 @@
+bma-app {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+bma-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+@media (max-width: 720px) {
+  bma-app {
+    top: 92px;
+  }
+}

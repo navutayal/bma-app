@@ -1,0 +1,23 @@
+@import "../../../../styles/constants";
+
+.bma-navbar-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 16px;
+
+  > .mat-button {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  */
+@media (max-width: $small-breakpoint-width) {
+  .bma-navbar-hide-small {
+    display: none;
+  }
+}
