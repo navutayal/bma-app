@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestComponent } from './test.component';
 import { SidenavModule } from 'src/app/shared/sidenav/sidenav.module';
+import { PageModule } from 'src/app/shared/page/page.module';
 
 
 
@@ -9,7 +10,7 @@ import { SidenavModule } from 'src/app/shared/sidenav/sidenav.module';
   declarations: [TestComponent],
   imports: [
     CommonModule,
-    SidenavModule
+    PageModule
   ]
 })
 export class TestModule { }

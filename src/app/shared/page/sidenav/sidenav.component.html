@@ -1,0 +1,33 @@
+<mat-sidenav-container class="bma-page-sidenav-container">
+    <!-- If on small screen, menu resides in drawer -->
+    <!-- <mat-sidenav #sidenav class="bma-page-sidenav"
+        *ngIf="(isHandset$ | async)"
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async)"
+        [fixedInViewport]="(isHandset$ | async)"
+        fixedTopGap="92">
+        
+        <bma-page-nav></bma-page-nav>
+
+    </mat-sidenav> -->
+
+    <div class="bma-page-sidenav-content">
+        <bma-page-header></bma-page-header>
+
+        <bma-page-nav></bma-page-nav>
+                
+        <!-- <div class="bma-page-sidenav-inner-content"> -->
+
+            <!-- <div class="bma-page-sidenav-body-content"> -->
+                <!-- If on large screen, menu resides to left of content -->
+                    
+                <!-- <router-outlet></router-outlet> -->
+                <div>body</div>
+            <!-- </div> -->
+
+        <!-- </div> -->
+
+    </div>
+
+</mat-sidenav-container>
