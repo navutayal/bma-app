@@ -1,5 +1,24 @@
-<mat-sidenav-container>
+<mat-sidenav-container class="bma-client-sidenav-container">
 
-    
+    <mat-sidenav #sidenav class="bma-client-sidenav"
+        [attr.role]="'navigation'"
+        fixedInViewport>
+        <bma-nav></bma-nav>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <bma-navbar class="mat-elevation-z6">
+            <ng-container ngProjectAs="sidenav-button">
+                <button mat-icon-button
+                    type="button"
+                    aria-label="Toggle sidenav"
+                    (click)="sidenav.toggle()">
+                    <mat-icon aria-label="Sidenav toggle icon">menu</mat-icon>
+                </button>
+            </ng-container>>
+        </bma-navbar>
+        <h1>body</h1>
+
+    </mat-sidenav-content>
 
 </mat-sidenav-container>

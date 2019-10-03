@@ -1,23 +1,17 @@
 <header class="bma-navbar-header">
 
-    <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="toggleSidenav.emit()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button>
+    <ng-content select="sidenav-button"></ng-content>
 
-    <a mat-button routerLink="/" aria-label="Book My Appointment">
-        <img class="docs-angular-logo" src="../../../../assets/img/homepage/angular-white-transparent.svg"
+    <a mat-button
+        routerLink="/"
+        aria-label="Book My Appointment">
+        <img class="docs-angular-logo"
+            src="../../../../assets/img/homepage/angular-white-transparent.svg"
             alt="angular">
         <span>Book My Appointment</span>
     </a>
 
-    <a mat-button class="bma-navbar-hide-small" routerLink="guides">Guides</a>
-    <a mat-button class="bma-navbar-hide-small" routerLink="guides">Guides</a>
-    <a mat-button class="bma-navbar-hide-small" routerLink="guides">Guides</a>
-    <a mat-button class="bma-navbar-hide-small" routerLink="guides">Admin</a>
+    <ng-content select="menu-section"></ng-content>
     <div class="flex-spacer"></div>
+
 </header>

@@ -7,6 +7,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 
+import { NavbarModule } from '../../navbar/navbar.module';
+import { NavModule } from '../../nav/nav.module';
 import { ClientSidenavComponent } from './client-sidenav/client-sidenav.component';
 
 @NgModule({
@@ -17,6 +19,8 @@ import { ClientSidenavComponent } from './client-sidenav/client-sidenav.componen
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
+    NavbarModule,
+    NavModule,
     RouterModule
   ],
   exports: [ClientSidenavComponent],

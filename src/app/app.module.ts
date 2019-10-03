@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { TestModule } from './modules/test/test.module';
 import { BMA_ROUTES } from './routes';
+import { ClientModule } from './shared/_layout/client/client.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BMA_ROUTES } from './routes';
     MatListModule,
     NavbarModule,
     TestModule,
+    ClientModule,
     RouterModule.forRoot(BMA_ROUTES)
   ],
   providers: [],

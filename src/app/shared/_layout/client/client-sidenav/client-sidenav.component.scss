@@ -1,0 +1,16 @@
+@import "../../../../../../styles/constants";
+
+bma-client-sidenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.bma-client-sidenav-container {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.bma-client-sidenav {
+  width: $sidenav-width;
+  overflow: auto;
+}

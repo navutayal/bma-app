@@ -8,8 +8,7 @@
   bma-navbar {
     color: mat-color($primary, default-contrast);
 
-    .bma-navbar,
-    .bma-navbar-header {
+    .bma-navbar, .bma-navbar-header {
       background: mat-color($primary);
     }
   }
