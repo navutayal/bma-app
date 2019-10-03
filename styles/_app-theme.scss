@@ -1,5 +1,6 @@
 @import "../node_modules/@angular/material/theming";
 @import "../src/app/shared/navbar/navbar-theme";
+@import '../src/app/shared/_layout/business/business-sidenav/business-sidenav-theme';
 
 @mixin bma-app-theme($theme) {
   $primary: map-get($theme, primary);
@@ -22,4 +23,5 @@
   }
 
   @include navbar-theme($theme);
+  @include business-sidenav-theme($theme);
 }

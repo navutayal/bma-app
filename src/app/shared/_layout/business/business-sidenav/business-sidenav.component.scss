@@ -1,0 +1,44 @@
+@import "../../../../../../styles/constants";
+
+bma-business-sidenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.bma-business-sidenav-container {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.bma-business-sidenav {
+  overflow: auto;
+}
+
+.bma-business-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.bma-business-page-header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  outline: none;
+}
+
+.bma-business-sidenav-body-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.bma-business-page-nav {
+    position: sticky;
+    top: 25px;
+    margin: 25px;
+    width: $sidenav-width;
+    max-height: 75vh;
+    overflow: auto;
+}

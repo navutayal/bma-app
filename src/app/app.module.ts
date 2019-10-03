@@ -14,6 +14,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { TestModule } from './modules/test/test.module';
 import { BMA_ROUTES } from './routes';
 import { ClientModule } from './shared/_layout/client/client.module';
+import { BusinessModule } from './shared/_layout/business/business.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ClientModule } from './shared/_layout/client/client.module';
     MatListModule,
     NavbarModule,
     TestModule,
-    ClientModule,
+    BusinessModule,
     RouterModule.forRoot(BMA_ROUTES)
   ],
   providers: [],
