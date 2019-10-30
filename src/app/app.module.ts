@@ -33,6 +33,7 @@ import { BusinessModule } from './shared/_layout/business/business.module';
     NavbarModule,
     TestModule,
     BusinessModule,
+    ClientModule,
     RouterModule.forRoot(BMA_ROUTES)
   ],
   providers: [],

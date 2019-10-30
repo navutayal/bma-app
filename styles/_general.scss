@@ -19,6 +19,10 @@ h1, h2 {
   }
 }
 
+.flex-spacer {
+  flex-grow: 1;
+}
+
 .docs-angular-logo  {
   height: 26px;
   margin: 0 4px 3px 0;
